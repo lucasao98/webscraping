@@ -28,6 +28,11 @@ class webscraping extends Command
     public function handle()
     {
         $resultado = new GetNewsController();
-        var_dump($resultado->get_recent_news());
+        var_dump("Noticias Carousel");
+        var_dump($resultado->get_destaque());
+        var_dump("Noticias Fixas na página");
+        var_dump($resultado->get_news_fixed());
+        var_dump("Noticias mais lidas");
+        var_dump($resultado->get_most_viewed());
     }
 }
